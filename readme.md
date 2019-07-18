@@ -2,7 +2,7 @@
 docker build -t <docker_id>/using-code-server .
 
 # Run
-docker run -p 8443:8443 -d <docker_id>/using-code-server
+docker run -p 8443:8443 -p 3000:3000 -p 8080:8080 -d <docker_id>/using-code-server
 
 # Using code-server
 Em algum navegador acesse localhost:8443
